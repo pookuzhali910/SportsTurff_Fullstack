@@ -35,21 +35,16 @@ function Login() {
 
           <label className="mb-2 block text-sm font-medium text-gray-700">Password</label>
           <div className="relative">
-          <input type={showPassword ? "text" : "password"}  placeholder="Enter your password" value={password} onChange={(e) => setPassword(e.target.value)} required
+          <input type= "password"  placeholder="Enter your password" value={password} onChange={(e) => setPassword(e.target.value)} required
               className="w-full rounded-lg border border-gray-300 px-4 py-3 pr-20 outline-none focus:border-green-600 focus:ring-2 focus:ring-green-100"
           />
 
-          <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-3 text-sm font-medium text-green-700">
-          {showPassword ? "Hide" : "Show"}
-            </button>
+         
           </div>
 
           <div className="my-5 flex items-center justify-between text-sm">
 
-          <label className="flex items-center gap-2 text-gray-600">
-          <input type="checkbox" checked={rememberMe} onChange={(e) => setRememberMe(e.target.checked)} className="accent-green-600"/>
-          Remember me
-          </label>
+          
           <a href="/forgot-password" className="font-medium text-green-700 hover:underline">Forgot password?</a>
           </div>
 
